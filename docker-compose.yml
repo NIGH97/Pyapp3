@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  streamlit:
+    build: .
+    container_name: streamlit_app
+    ports:
+      - "80:8501"
+    restart: unless-stopped
